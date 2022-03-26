@@ -1,0 +1,8 @@
+@use '../main.scss';
+
+.custonButton {
+    @include main.radius;
+    align-content: center;
+    display: flex;
+    background-color: rebeccapurple;
+}

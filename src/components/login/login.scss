@@ -1,0 +1,28 @@
+@use '../../main';
+
+.textInput {
+  @include main.textInput;
+}
+
+
+#navigationBar {
+  width: 100vw;
+  height: 5vh;
+  min-height: 50px;
+  @include main.mainTheme;
+}
+
+#loginBox {
+  height: 50vh;
+  width: 20vw;
+  top: 25vh;
+  position: absolute;
+  left: 40vw;
+  min-width: 300px;
+  @include main.mainTheme;
+  min-height: 400px;
+}
+
+#loginBox > * > *{
+  margin: auto;
+}

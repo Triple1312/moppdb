@@ -1,0 +1,38 @@
+
+@mixin blurTheme {
+  background-color: #fff5;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.purpleTheme {
+
+}
+
+.button1 {
+
+}
+
+@mixin center {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  margin: fill;
+}
+
+@mixin mainTheme {
+  @include blurTheme;
+  @include radius;
+}
+
+@mixin radius {
+  border-radius: 10px;
+}
+
+@mixin textInput {
+  @include radius;
+  width: 70%;
+  height:30px;
+}
+
